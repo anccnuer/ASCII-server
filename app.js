@@ -160,6 +160,17 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     6666666666666666666  6666      .666.  6.  6666.     6666          6666666666                              6666           
     666.      .6666666    666       .6.   66666666                     6666666                              66666            
                                                                                                                              
+    `,
+    '/help':`
+        这里是帮助喵~（・ω・）
+        /m      盲文‘燕京小学’
+        /6      数字6组成的‘燕京小学’
+        /xo     数字6组成的‘燕京小学’
+        /num    数字组成的‘燕京小学’
+        /guozi  有你好果子吃
+        /mao    猫猫可爱吗
+        /lv     驴子
+        /nb     顾名思义
     `
 };
 
@@ -177,7 +188,13 @@ const server = http.createServer((req, res) => {
     } else {
         // 如果路径不存在，返回 404 ASCII 图
         res.statusCode = 404;
-        res.end('路径不对呢');
+        res.end(`
+        路径错了喵~（・ω・）
+        /m      盲文‘燕京小学’
+        /6      数字6组成的‘燕京小学’
+        /xo     数字6组成的‘燕京小学’
+        /num    数字组成的‘燕京小学’
+            `);
     }
 });
 
